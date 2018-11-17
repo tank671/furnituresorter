@@ -8,3 +8,5 @@ Furniture-download.ipynb covers how I created the training dataset.
 Furniture-train-ipynb covers the training process
 
 railing-app contains everything to deploy the classifier as a webapp through zeit, with massive appreciation to Arunoda Susiripala for packaging everything up.
+
+The app is online at classy-railing.now.sh  
