@@ -1,0 +1,52 @@
+[build-system]
+requires = ["briefcase"]
+
+[tool.briefcase]
+project_name = "FurnitureSorter"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://github.com/tank671/furnituresorter"
+license = "MIT license"
+author = 'tank671'
+author_email = "43883333+tank671@users.noreply.github.com"
+
+
+[tool.briefcase.app.furnituresorter]
+formal_name = "FurnitureSorter"
+description = "Image classifier for furniture"
+icon = "src/furnituresorter/resources/furnituresorter"
+sources = [
+    'src/furnituresorter',
+    'src/furnituresorter/resources/weights.pth'
+]
+requires = [
+    'torch @ https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp37-cp37m-win_amd64.whl',
+    'torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.5.0%2Bcpu-cp37-cp37m-win_amd64.whl'
+]
+
+
+[tool.briefcase.app.furnituresorter.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.furnituresorter.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.furnituresorter.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev18',
+]
+
+# Mobile deployments
+[tool.briefcase.app.furnituresorter.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev18',
+]
+
+[tool.briefcase.app.furnituresorter.android]
+requires = [
+    'toga-android>=0.3.0.dev18',
+]

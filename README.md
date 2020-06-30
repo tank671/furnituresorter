@@ -1,12 +1,8 @@
-# railing-or-not
-Is it a railing, or a different kind of object?
+# furnituresorter
 
-This is an image classifier created using fast.ai's approach and tools.  It would be difficult to overstate how great these are.  They are great!
+Automatic organization of furniture pictures, using deep learning -- now updated!
 
-Furniture-download.ipynb covers how I created the training dataset.
+The `furnituresorter` folder contains all the files for the latest version of the project, which can be used as a Windows-based desktop app.  To use the application, choose a folder you want sorted and a destination for the sorted pictures.  (Images are copied, not moved.)
 
-Furniture-train-ipynb covers the training process
 
-railing-app contains everything to deploy the classifier as a webapp through zeit, with massive appreciation to Arunoda Susiripala for packaging everything up.
-
-The app is online at classy-railing.now.sh  
+The `old` folder contains everything from the previous version, which is still online at classy-railing.now.sh
